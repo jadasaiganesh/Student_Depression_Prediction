@@ -100,29 +100,45 @@ Visit 👉 http://127.0.0.1:8000/ to use the application.
 ```bash
 Student_Depression_Prediction/
 │
+├── .gitignore
 ├── db.sqlite3
 ├── manage.py
-├── student_depression.ipynb
-├── requirements.txt
-├── README.md
+├── structure.txt
+├── student prediction.ipynb
+├── student_depression_dataset.csv
 │
 ├── images/
-│   └── ... (optional screenshots)
+│   ├── 1.png
+│   ├── 2.png
+│   └── 3.png
 │
-├── student_depression_app/
+├── prediction/
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── tests.py
+│   ├── urls.py
+│   ├── views.py
+│   ├── __init__.py
+│   │
+│   ├── migrations/
+│   │   ├── 0001_initial.py
+│   │   └── __init__.py
+│   │
+│   ├── models/
+│   │   ├── student_depression_xgb_model.pkl
+│   │   └── student_depression_xgb_model.json
+│   │
+│   ├── static/
+│   ├── templates/
+│   │   └── predict.html
+│
+├── student_depression/
+│   ├── asgi.py
 │   ├── settings.py
 │   ├── urls.py
-│   ├── views.py
-│   └── static/
-│
-├── predictor/
-│   ├── models/
-│   │   └── tuned_xgb_model.pkl
-│   ├── templates/
-│   │   └── homepage.html
-│   ├── urls.py
-│   ├── views.py
-│   └── ...
+│   ├── wsgi.py
+│   └── __init__.py
 ```
 ---
 ## 💡 Technologies Used
